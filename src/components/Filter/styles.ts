@@ -5,7 +5,7 @@ export type FilterStyleProps = {
   isActive?: boolean;
 };
 
-export const Container = styled(TouchableOpacity).attrs(
+export const Container = styled(TouchableOpacity).attrs<FilterStyleProps>(
   ({ theme, activeOpacity }) => ({
     activeOpacity: 0.8,
   })
